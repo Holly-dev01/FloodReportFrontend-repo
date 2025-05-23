@@ -1,5 +1,8 @@
 console.log('Login script loaded');
+
 document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('Form submitted');
+    const username = document.getElementById('adminUsername').value;
+    const password = document.getElementById('adminPassword').value;
+    console.log('Username:', username, 'Password:', password);
 });
