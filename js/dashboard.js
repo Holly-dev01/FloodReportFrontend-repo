@@ -14,10 +14,12 @@ async function loadAdminReports() {
         if (!response.ok) throw new Error('Erreur de chargement');
 
         const reports = await response.json();
-        console.log('Reports loaded:', reports);
+        const list = document.getElementById('adminReportsList');
+        list.innerHTML = '';
+        reports.forEach(r => list.appendChild(createAdminReportCard(r)));
     } catch (err) {
         alert('Erreur lors du chargement des données');
-        console.error('Error loading reports:', err);
+        console.error(err);
     }
 }
 
