@@ -6,6 +6,7 @@ document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
     const password = document.getElementById('adminPassword').value;
     
     if (username === 'admin' && password === 'admin') {
+        localStorage.setItem('adminToken', 'admin-token');
         window.location.href = 'dashboard.html';
     } else {
         alert('Identifiants invalides');
