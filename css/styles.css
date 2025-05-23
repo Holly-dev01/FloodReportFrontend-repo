@@ -69,3 +69,24 @@ header h1 {
     color: #2c3e50;
     margin-bottom: 0.5rem;
 }
+
+.severity {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: white;
+    display: inline-block;
+}
+
+.severity-LOW {
+    background-color: #2ecc71;
+}
+
+.severity-MEDIUM {
+    background-color: #f1c40f;
+}
+
+.severity-HIGH {
+    background-color: #e74c3c;
+}
