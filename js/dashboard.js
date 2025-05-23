@@ -7,3 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     console.log('Dashboard loaded successfully');
 });
+
+async function loadAdminReports() {
+    try {
+        const response = await fetch(`${API_URL}/reports/all`);
+        const reports = await response.json();
+        console.log('Reports loaded:', reports);
+    } catch (err) {
+        console.error('Error loading reports:', err);
+    }
+}
