@@ -4,5 +4,10 @@ document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById('adminUsername').value;
     const password = document.getElementById('adminPassword').value;
-    console.log('Username:', username, 'Password:', password);
+    
+    if (username === 'admin' && password === 'admin') {
+        alert('Login successful!');
+    } else {
+        alert('Invalid credentials');
+    }
 });
