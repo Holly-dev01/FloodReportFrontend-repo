@@ -46,3 +46,12 @@ function formatDate(dateString) {
     };
     return new Date(dateString).toLocaleDateString('fr-FR', options);
 }
+
+function translateSeverity(severity) {
+    const translations = {
+        'LOW': 'Faible',
+        'MEDIUM': 'Moyen',
+        'HIGH': 'Élevé'
+    };
+    return translations[severity] || severity;
+}
