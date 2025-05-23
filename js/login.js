@@ -6,8 +6,8 @@ document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
     const password = document.getElementById('adminPassword').value;
     
     if (username === 'admin' && password === 'admin') {
-        alert('Login successful!');
+        window.location.href = 'dashboard.html';
     } else {
-        alert('Invalid credentials');
+        alert('Identifiants invalides');
     }
 });
