@@ -20,3 +20,16 @@ async function loadAdminReports() {
         console.error('Error loading reports:', err);
     }
 }
+
+function createAdminReportCard(report) {
+    const card = document.createElement('div');
+    card.className = 'admin-report-card';
+    
+    card.innerHTML = `
+        <h3>${report.location}</h3>
+        <p>${report.description}</p>
+        <p>Severity: ${report.severity}</p>
+    `;
+    
+    return card;
+}
