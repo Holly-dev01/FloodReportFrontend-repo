@@ -59,10 +59,11 @@ header h1 {
 
 .admin-report-card {
     background: #f9f9f9;
-    border-left: 4px solid #3498db;
+    border-left: 5px solid #3498db;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .admin-report-card h3 {
