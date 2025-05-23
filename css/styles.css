@@ -56,3 +56,16 @@ button:hover {
 header h1 {
     color: #2c3e50;
 }
+
+.admin-report-card {
+    background: #f9f9f9;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.admin-report-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
