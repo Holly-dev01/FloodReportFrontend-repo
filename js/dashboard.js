@@ -30,7 +30,7 @@ function createAdminReportCard(report) {
     card.innerHTML = `
         <h3>${report.location}</h3>
         <p>${report.description}</p>
-        <p>Niveau de gravité : ${translateSeverity(report.severity)}</p>
+        <p>Niveau de gravité : <span class="severity severity-${report.severity}">${translateSeverity(report.severity)}</span></p>
         <p>Signalé le : ${formatDate(report.reportDate)}</p>
     `;
     
